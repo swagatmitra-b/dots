@@ -53,7 +53,11 @@ return {
                     n = { ['q'] = require('telescope.actions').close },
                 },
             },
-            -- pickers = {}
+            pickers = {
+                find_files = {
+                    no_ignore = true
+                }
+            },
             extensions = {
                 ['ui-select'] = {
                     require('telescope.themes').get_dropdown(),
