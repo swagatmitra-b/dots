@@ -1,0 +1,5 @@
+go
+nvim/lua/unused
+nvim/todo.txt
+nvim/todo_list.json
+nvim/todo_list_copy.json
