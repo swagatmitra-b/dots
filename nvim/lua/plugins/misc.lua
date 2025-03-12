@@ -45,4 +45,10 @@ return {
             { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
         },
     },
+    {
+        "swagatmitra-b/cepheid.nvim",
+        config = function ()
+            require("todo").setup({})
+        end
+    }
 }

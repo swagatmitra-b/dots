@@ -14,4 +14,4 @@ require("lazy").setup("plugins",{
     }
 })
 require("snippets")
-require("todo")
+require("sessions")
