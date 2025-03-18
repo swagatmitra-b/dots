@@ -97,9 +97,19 @@ map("v", ">", ">gv")
 
 map("n", "<leader>0", "ma gg=G 'a")
 
+-- select entire buffer
+
+map("n", "vae", "ggVG")
+
 -- paste without yanking replaced text (visual mode)
 
 map("v", "p", '"_dP')
+
+-- find and replace
+
+map("n", "mf", function ()
+    api.nvim_feedkeys(api.nvim_replace_termcodes(":%s/", true, false, true), "n", false)
+end)
 
 -- delete without yanking (visual mode)
 

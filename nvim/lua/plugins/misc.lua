@@ -34,7 +34,6 @@ return {
     {
         "folke/flash.nvim",
         event = "VeryLazy",
-        ---@type Flash.Config
         opts = {},
         -- stylua: ignore
         keys = {
@@ -47,8 +46,13 @@ return {
     },
     {
         "swagatmitra-b/cepheid.nvim",
+        branch = "list",
         config = function ()
-            require("todo").setup({})
+            require("todo").setup({
+                window = {
+                    height = 0.5
+                }
+            })
         end
     }
 }
